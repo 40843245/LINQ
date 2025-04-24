@@ -19,4 +19,6 @@
 | orderby `{expressionOfElement1InQuerableObject}` (ascending\|descending)? | sort the `IQuerable<T>` object by element in the `IQuerable<T>` object or expression of that in ascending order or descending order according to the specified argument is `ascending` or `descending`, or none.  | order by `{expressionOfElement1InTable}` (ASC\|DESC)? | The default value is `ascending`.</br>That is, if `ascending` and `descending` are NOT specified, it will sort in ascending order. |
 | orderby `{orderbyClause}`(, `{orderbyClause}`)* </br>where</br>`{orderbyClause}` is the content of `orderby` clause</br><pre>{orderbyClause}`:=`{expression1OfElementInQuerableBean}` (ascending\|descending)?</pre>| sort the `IQuerable<T: class>` object (i.e. an object whose type is IQueryable of (a bean considered as) a class) or expression of that in ascending order or descending order according to the specified argument is `ascending` or `descending`, or none. | order by `{orderbyClause}`(, `{orderbyClause}`)*</br>where</br>`{orderbyClause}` is the content of `orderby` clause</br><pre>{orderbyClause}`:=`{expression1OfColumnInTable}` (ASC\|DSC)?</pre>| syntax similar to above, but it can accepts one or more `orderby` subclauses, separated by comma | 
 
-
+## reference
++ [SQL (W3School)](https://www.w3schools.com/sql/default.asp)
++ [Query keywords in LINQ (MSDS)](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/query-keywords)
