@@ -17,6 +17,6 @@
 | join `{elementNameInIQuerableObject2}` in `{IQuerableObject2}` on `{elementNameInIQuerableObject1}.{property1InIQuerableObject1}` equal `{elementNameInIQuerableObject2}.{property1InIQuerableObject2}` | do **inner join** on the relationship `{elementNameInIQuerableObject1}.{property1InIQuerableObject1}` equals to `{elementNameInIQuerableObject2}.{property1InIQuerableObject2}` | similar to inner join `{table2Name}` on `{table1Name}.{column1InTable1}` = `{table2Name}.{column1InTable2}` | |
 | let `{subqueryName}` = `{expressionAboutElementNameInTable1}` | for each element in an `IQuerable<T>` object, evaluate the element with the expression `{expressionAboutElementNameInTable1}` and store it into subquery with name `{subqueryName}`. | | |
 | orderby `{expressionOfElement1InQuerableObject}` (ascending|descending)? | sort the `IQuerable<T>` object by element in the `IQuerable<T>` object or expression of that in ascending order or descending order according to the specified argument is `ascending` or `descending`, or none.  | order by `{expressionOfElement1InTable}` (ASC|DESC)? | The default value is `ascending`.</br>That is, if `ascending` and `descending` are NOT specified, it will sort in ascending order. |
-| orderby `{orderbyClause}`(, `{orderbyClause}`)* </br> where</br>```</br>``{orderbyClause}`:=`{expression1OfElementInQuerableBean}` (ascending|descending)? ```| 
+| orderby `{orderbyClause}`(, `{orderbyClause}`)* </br> where</br>```</br>`{orderbyClause}`:=`{expression1OfElementInQuerableBean}` (ascending|descending)? ```| 
 
 
